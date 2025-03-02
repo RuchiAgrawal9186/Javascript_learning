@@ -8,6 +8,8 @@ console.table([userName.toUpperCase(),userName.charAt(3),userName.indexOf('e')])
 const newName = 'hello-world-com'
 const newName1 = '  hello-world- com  '
 
+// console.log(newName.__proto__) // its giving prototype object (which includes all methods of string)
+
 console.table([newName.includes('world'),
                newName.includes('abc'),
                newName.split("-"), // its spilt string with - and giving array 
