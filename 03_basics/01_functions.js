@@ -22,3 +22,25 @@ function defaultParams (name='abc')
 }
 console.log(defaultParams())
 console.log(defaultParams('xyz'))
+
+//rest operator
+
+function learnRestOperator (num1,num2,...val) // val is in rest operator give all remaining values
+{
+  return val
+}
+console.log(learnRestOperator(500,600,23,490,300,200)) // [ 23, 490, 300, 200 ] return in array rest of values
+
+// pass object and array in functions
+
+function passArray (newArray)
+{
+    return newArray[3]
+}
+console.log(passArray([30,50,60,12,92,52]))
+
+function passObject (newObj)
+{
+    return `${newObj.name}`
+}
+console.log(passObject({name:'abc',city:'dahod'}))
